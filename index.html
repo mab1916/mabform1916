@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form>
+        <h1>Registration Form</h1>
+        <table>
+        <!-- 1st Row -->
+            <tr>
+                <td>
+                    <p>User Id</p>
+                </td>
+                <td>
+                    <input type="text" id="userId" name="userId" placeholder="Enter Your UserID" required>
+                </td>
+                <td>
+                    <p style="color: red;" id="userIdNote"></p>
+                </td>
+            </tr>
+        <!-- 2nd Row -->
+            <tr>
+                <td>
+                    <p>Password</p>                    
+                </td>
+                <td>
+                    <input type="password" id="UserPassword" placeholder="Enter Your Password" required>
+                </td>
+                <td>
+                    <p style="color: red;" id="userPasswordNote"></p>
+                </td>
+            </tr>
+        <!-- 3rd Row -->
+            <tr>
+                <td>
+                    <p>Name</p>
+                </td>
+                <td>
+                    <input type="text" id="UserName" placeholder="Enter Your Name" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required>
+                </td>
+                <td>
+                    <p style="color: red;" id="userNameNote"></p>
+                </td>
+            </tr>
+        <!-- 4th Row -->
+            <tr>
+                <td>
+                    <p>Address</p>
+                </td>
+                <td>
+                    <input type="text" placeholder="Address is Optional">
+                </td>
+            </tr>
+        <!-- 5th Row -->
+            <tr>
+                <td>
+                    <p>Country</p>
+                </td>
+                <td>
+                    <select name="country" id="country" required>
+                        <option value="" hidden>(Please select a country)</option>
+                        <option value="1">Pakistan</option>
+                        <option value="2">India</option>
+                        <option value="3">Sri Lanka</option>
+                        <option value="4">Bangladesh</option>
+                    </select>
+                </td>
+                <p id="countryNote"></p>
+            </tr>
+        <!-- 6th Row -->
+            <tr>
+                <td>
+                    <p>ZIP Code</p>
+                </td>
+                <td>
+                    <input type="number" name="zipCode" id="zipCode" placeholder="Enter your City Zip Code" required>
+                </td>
+                <p id="zipCodeNote"></p>
+            </tr>
+        <!-- 7th Row -->
+            <tr>
+                <td>
+                    <p>E-mail</p>
+                </td>
+                <td>
+                    <input type="email" name="Email" id="EMail" placeholder="Enter a Valid E-mail" required>
+                </td>
+                <p id="emailNote"></p>
+            </tr>
+        <!-- 8th Row -->
+            <tr>
+                <td>
+                    <p>Gender</p>
+                </td>
+                <td>
+                    <input type="radio" name="male" id="male">
+                    <label for="male">
+                        Male
+                    </label>
+                    <input type="radio" name="female" id="female">
+                    <label for="female">
+                        Female
+                    </label>
+                </td>
+                <td>
+                    <p style="color: red;" id="genderNote"></p>
+                </td>
+            </tr>
+        <!-- 9th Row -->
+            <tr>
+                <td>
+                    <p>Language</p>
+                </td>
+                <td>
+                    <input type="checkbox" name="English" id="English">
+                    <label for="English">
+                        English
+                    </label>
+                    <input type="checkbox" name="NonEnglish" id="NonEnglish">
+                    <label for="NonEnglish">
+                        Non-English
+                    </label>
+                </td>
+                <td>
+                    <p style="color: red;" id="languageNote"></p>
+                </td>
+            </tr>
+        <!-- 10th Row -->
+            <tr>
+                <td>
+                    <p>About</p>
+                </td>
+                <td>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Write something about yourself. this is Optional."></textarea>
+                </td>
+            </tr>
+        </table>
+        <button style="cursor: pointer;" onclick="SubMit()">
+            Submit
+        </button>
+        <script src="./10th Assignment Form.js"></script>
+    </form>
+    </body>
+</html>
